@@ -1,7 +1,7 @@
 # importing the functions blueprint and render_template from the Flask module
 from flask import Blueprint, render_template
 
-# Blueprint() lets us consolidate routes onto a single bp object that the parent app can register later.
+# Blueprint() lets us consolidate routes onto a single bp object that the parent app can register later. This corresponds to using the Router middleware of Express.js.
 # render_template() function to respond with a template instead of a string.
 bp = Blueprint('home', __name__, url_prefix='/')
 
